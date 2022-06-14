@@ -400,6 +400,7 @@ public class RangeSeekBar extends View {
                 if (TextUtils.isEmpty(text2Draw)) continue;
                 paint.getTextBounds(text2Draw, 0, text2Draw.length(), tickMarkTextRect);
                 paint.setColor(tickMarkTextColor);
+                paint.setAntiAlias(true);
                 //平分显示
                 float x;
                 if (tickMarkMode == TRICK_MARK_MODE_OTHER) {
